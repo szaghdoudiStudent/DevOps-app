@@ -1,8 +1,11 @@
 pipeline {
-  env.PATH = "/usr/local/bin:${env.PATH}"
+  
   agent any
   options { skipDefaultCheckout() }
   stages {
+    stage('INIT'){
+    env.PATH = "/usr/local/bin:${env.PATH}"
+    }
     stage('SCM') {
       steps {
         checkout scm
