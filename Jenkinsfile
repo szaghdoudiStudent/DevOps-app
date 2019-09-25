@@ -4,7 +4,9 @@ pipeline {
   options { skipDefaultCheckout() }
   stages {
     stage('INIT'){
-    env.PATH = "/usr/local/bin:${env.PATH}"
+      steps {
+        env.PATH = "/usr/local/bin:${env.PATH}}
+        
     }
     stage('SCM') {
       steps {
