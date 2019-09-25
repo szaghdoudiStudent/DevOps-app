@@ -1,4 +1,5 @@
 pipeline {
+  env.PATH = "/usr/local/bin:${env.PATH}"
   agent any
   options { skipDefaultCheckout() }
   stages {
