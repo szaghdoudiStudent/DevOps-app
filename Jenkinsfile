@@ -5,7 +5,8 @@ pipeline {
   stages {
     stage('INIT'){
       steps {
-        env.PATH = "/usr/local/bin:${env.PATH}}
+        env.PATH = "/usr/local/bin:${env.PATH}"
+      }
         
     }
     stage('SCM') {
