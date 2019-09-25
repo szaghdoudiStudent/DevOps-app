@@ -3,12 +3,6 @@ pipeline {
   agent any
   options { skipDefaultCheckout() }
   stages {
-    stage('INIT'){
-      steps {
-        env.PATH = "/usr/local/bin:${env.PATH}"
-      }
-        
-    }
     stage('SCM') {
       steps {
         checkout scm
