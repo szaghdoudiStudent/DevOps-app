@@ -5,9 +5,10 @@ pipeline {
   stages {
     stage('SCM') {
       steps {
-        sh 'which mvn'
-        sh 'which java'
-        sh 'which docker'
+        sh ' mvn --version'
+        sh ' which mvn'
+        sh ' which java'
+        sh ' which docker'
         sh ' docker --version'
         //checkout scm
       }
