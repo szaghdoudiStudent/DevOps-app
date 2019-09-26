@@ -5,7 +5,8 @@ pipeline {
   stages {
     stage('SCM') {
       steps {
-        checkout scm
+        sh ' docker --version'
+        //checkout scm
       }
     }
     stage('Compile') {
